@@ -1,0 +1,87 @@
+.block-quistion-header
+    display: flex
+    justify-content: space-between
+    margin-top: 40px
+    h2 
+        font-size: 28px
+        font-style: normal
+        font-weight: bold
+        line-height: 33px
+.block-quistion
+    display: flex
+    justify-content: space-between
+    margin-left: 28px
+
+
+.block_bumble_l
+        width: 81px
+        position: relative
+        height: 41px
+        margin-top: 70px
+        background: linear-gradient(90deg, #e60f00 23%, #a00000 149%)
+        .bumble_left
+            p
+                position: relative
+                z-index: 966
+                font-style: normal
+                font-weight: 300
+                font-size: 14px
+                line-height: 16.41px
+                text-align: center
+                top: 10px
+            &::after
+                z-index: 0
+                content: ""
+                position: absolute
+                left: -13px
+                top: 73%
+                width: 0
+                height: 0
+                border-left: 0
+                border-bottom: 0
+                margin-top: -5px
+                border-left: 14px
+                border-width: 37px 31px 0 0
+                transform: skewX(-35deg)
+                border-color: #e60f00 transparent
+                border-style: solid
+
+
+.block_bumble_r
+        width: 81px
+        position: relative
+        height: 41px
+        margin-right: 51px;
+        background: #232323
+        margin-top: 24px
+    
+        .bumble_rigth
+            p
+                position: relative
+                margin-right: 3px
+                z-index: 966
+                font-style: normal
+                font-weight: 300
+                font-size: 14px
+                line-height: 16.41px
+                text-align: center
+                top: 10px
+
+.bumble_rigth::after
+        z-index: 0
+        content: ""
+        position: absolute
+        right: 0
+        top: 117%
+        width: 0
+        height: 0
+        border: 37px solid transparent
+        border-right: 0
+        border-bottom: 0
+        margin-top: -18px
+        border-color: #232323 transparent
+        margin-right: -24px
+        transform: skewX(55deg)
+
+
+
