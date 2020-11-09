@@ -1,0 +1,82 @@
+.tr_header
+    display: flex
+    justify-content: space-between
+    padding: 10px 0 0 0
+    margin: 62px 0 0
+    text-align: center
+
+    h2 
+        text-transform: uppercase
+        font-style: normal
+        font-size: 28px
+        margin-top: -4px
+        line-height: 33px
+.polygon_1
+    width: 0
+    height: 0
+    border-top: 10px solid transparent
+    border-left: 14px solid rgb(229,2,19)
+    border-bottom: 11px solid transparent
+.polygon_2
+    width: 0
+    height: 0
+    transform: rotate(180deg)
+    border-top: 10px solid transparent
+    border-left: 14px solid rgb(229,2,19)
+    border-bottom: 11px solid transparent
+.polygon1_topleft
+    width: 0
+    height: 0
+    border-top:  60px solid rgb(229, 2, 19)
+    border-right: 60px solid transparent
+    position: absolute
+    left: 0
+    h2
+        margin: -54px 6px 0
+        font-size: 24px
+        line-height: 28px
+
+.polygon1_toprigth
+    width: 0
+    height: 0
+    border-top:  60px solid rgb(229, 2, 19)
+    border-left: 60px solid transparent
+    position: absolute
+    right: 0
+    h2
+        margin: -54px 6px 0
+        font-size: 24px
+        line-height: 28px
+        strong
+            position: absolute
+            right: 0
+            margin-right: 9px
+
+
+@media screen and ( min-width: 768px  )
+    .tr_header
+        h2 
+            font-size: 48px
+            line-height: 56px
+    .polygon_1
+        border-top: 20px solid transparent
+        border-left: 32px solid rgb(229,2,19)
+        border-bottom: 26px solid transparent
+    .polygon_2
+        border-top: 20px solid transparent
+        border-left: 32px solid rgb(229,2,19)
+        border-bottom: 26px solid transparent
+    .polygon1_topleft
+        border-top:  100px solid rgb(229, 2, 19)
+        border-right: 100px solid transparent
+        h2 
+            font-size: 30px
+            line-height: 35px
+            margin: -82px 14px 0
+    .polygon1_toprigth
+        border-top:  100px solid rgb(229, 2, 19)
+        border-left: 100px solid transparent
+        h2 
+            font-size: 30px
+            line-height: 35px
+            margin: -82px 14px 0

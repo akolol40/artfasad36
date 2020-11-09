@@ -1,0 +1,76 @@
+.price 
+    margin-top: 5px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    padding: 0 20vmax
+    .prc
+        margin-top: 10px
+        margin-bottom: 10px
+        background: #232323
+        position: relative
+        display: flex
+        flex-direction: row
+
+        justify-content: space-between
+        .icon 
+           
+           img 
+            width: 20vmax
+            height: 35vmax
+        .content
+            padding: 0 83px
+            h3 
+                margin-left: -1px
+                padding: 1vmax 4vmax
+                font-weight: 500
+                font-style: normal
+                font-size: 18px
+                text-align: center
+                line-height: 21px
+                background: linear-gradient(90deg,#e60f00,#a00000)
+                position: absolute
+                left: 0
+                right: 27%
+                top: 57%
+            p
+                font-weight: 300
+                font-style: normal
+                font-size: 14px
+                line-height: 16px
+                margin: 12px -67px
+                &:last-child
+                    position: absolute
+                    bottom: 0%
+
+
+@media screen and ( min-width: 736px )
+    .price
+        padding: 0 10vmax
+        margin-bottom: 46px
+        .prc
+            .icon
+                img 
+                    width: 24vmax
+            .content
+                h3
+                    font-size: 36px 
+                    line-height: 42px
+                    white-space: nowrap
+                p
+                    padding: 0 
+                    font-size: 24px 
+                    line-height: 28px 
+
+@media screen and ( min-width: 1280px )
+    .price
+        margin-bottom: 46px
+        flex-direction: row
+        padding: 0
+        .prc
+            margin: 49px 30px -15px
+ 
+    
+      
+ 

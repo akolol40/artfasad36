@@ -1,105 +1,119 @@
 // Header
- //medea iphone plus ...
-@media screen and ( min-width: 768px )
-    .section-header-block.logo
-        svg 
-            width: 77px
-            height: 74px
-    .section-header-block.logo_artfasad
-        svg
-            width: 218px
-            height: 23px
-    .section-header-block_tint
-        .text
-            h1
-             font-weight: 700
-             font-style: normal
-             font-size: 48px
-             line-height: 56px
-            h2
-             font-weight: 700
-             font-style: normal
-             font-size: 36px
-             line-height: 53px
-
-        .png
-            margin-right: 42px
-            img 
-             width: 508px
-             height: 1055px   
-        .text
-                margin-top: -100%
-                margin-left: -12%
-                text-align: left
-                width: 500px
-        .logo_artfasad
-            margin-top: 123px
-            margin-right: 213px
-            position: relative
-            z-index: 2
-            img
-                width: 338px
-                height: 326px
-        .logo_tint 
-            img
-                width: 131px
-                height: 270px
-.section-header-block
+.header
     display: flex
-    justify-content: flex-start
+    margin: 4vmin 6vmin 0
+    .logo
+        width: 14vmin
+        height: 7vmin
+    .logo_artfasad36
+        margin: 7vmin 4vmin 0
+        width: 41vmin
+        height: 2vmin
 
-.section-header-block.logo
-    margin-left: 20px
-    margin-top: 13px
-    svg
-        width: 47px
-        height: 46px
-.section-header-block.logo_artfasad
-    svg  
-        width: 142px
-        height: 16px
-    margin-top: 28px
-    margin-left: 17px
-
-.section-header-block_tint
+.block
+    margin: 24vmin 0 0
     display: flex
     justify-content: space-between
-    flex-wrap: wrap
-    .logo_tint
-        margin-top: 32px
-        img
-         width: 57px
-         height: 118px
 
-    .logo_artfasad
-        margin-top: 53px
-        margin-right: 76px
-        position: relative
-        z-index: 9666
-        img
-            width: 152px
-            height: 147px
-    .png
+    .tint
+        width: 10vmax
+        height: 9vmax
+        background: #ffffff
+        transform: skewY(-35deg)
+    .picture
         position: absolute
-        right: 0
-    .text
-            text-align: center
-            margin-top: -100%
-            margin-left: -28%
-            width: 230px
-            h1
+        background-image: url("../img/png/Photo.png") 
+        background-repeat: no-repeat
+        background-position: right top
+        background-size: cover
+        width: 40vmax
+        height: 83vmax
+        margin: -11vmax 0 0   
+        right: 0    
+        .logo_artfasad
+            position: relative
+            width: 27vmax
+            height: 25vmax
+            margin: 9vmax 0 0
+        .content
+            margin-top: 46px
+            text-transform: uppercase
+            margin-left: -41px
+            h1 
+                padding: 0
+                margin-left: 0
+                font-size: 36px
                 font-style: normal
-                font-weight: bold
-                font-size: 33px
                 line-height: 42px
             h2 
-                 font-weight: 500
-                 font-size: 18px
-                 font-style: normal
-                 line-height: 26px
-.icon
-    text-align: right
-    margin-right: 21px
-    a:active, a:focus, a
-        outline: none
+                padding: 0
+                margin: 0
+                font-size: 18px
+                line-height: 26px
+            
+            button 
+                display: none
+
+@media screen and ( min-width: 768px )
+ .block
+    .picture
+        margin: -22vmax 23px  
+        .content
+            margin-top: 83px
+            h1 
+                font-size: 64px 
+                line-height: 75px 
+                padding: 0
+                margin-left: -132px 
+            h2 
+                font-size: 36px 
+                line-height: 53px    
+                padding: 0
+                margin: 0 -11px 0px -116px 
+
+
+@media screen and ( min-width: 1280px )
+ .block
+    .picture
+        margin-right: 0 
+        width: 24vmax 
+        height: 51vmax 
+        margin: -13vmax 0 
+        .content 
+            margin-top:  -412px 
+            margin-left: -666px 
+            h1 
+                font-size: 48px 
+                line-height: 56px     
+                strong 
+                    margin-left: 15px 
+            h2 
+                font-weight: 700 
+                font-size: 26px 
+                line-height: 30px 
+                width: 500px
+
+            button 
+                display: block 
+                padding: 9px 28px 
+                font-weight: 300
+                font-style: normal
+                font-size: 24px
+                line-height: 35px
+                text-align: center
+                margin-left: -85px
+                margin-top: 100px
+                background: #1c1c1c
+                border: 3px solid
+                border-image: 3 linear-gradient(90deg, #e60f00 0%, #a00000 100%)
+                outline: none
+                color: #ffffff   
+
+        .logo_artfasad
+            margin: 7vmax -27vmax 
+        
+        
+
+
+
 // /Header
