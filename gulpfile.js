@@ -59,7 +59,7 @@ function browserSync() {
         port: 3000,
         notify: false,
         logPrefix: "Frontend_akolol40",
-        tunnel: true
+        tunnel: false
     })
 }
 

@@ -112,46 +112,36 @@ html(lang="ru", dir="ltr", xmlns:og="http://ogp.me/ns#")
                 .polygon_2       
             
             .form-task 
-              form(action="#", method="post").casual
-                .content
-                    h3 УКАЖИТЕ РАЗМЕРЫ: 
-                    
-                    .block-label 
-                        label Стена: 
-                        .block-input-stena 
-                            input(type="text")
-                            input(type="text")
-                            input(type="text")
-                            input(type="text")
-                        label Окно:
-                        .block-input-window
-                            input(type="text")
-                            input(type="text")
+              form(action="#", method="post")
+                .casual
+                    h3 УКАЖИТЕ РАЗМЕРЫ:
+                    .block-label
+                        label(for=".block-inputs.position#stena_1") Стены: 
+                        label Окно: 
                         label Цоколь:
-                        .block-input-window
-                            input(type="text")
-                            input(type="text")
+                    .block-inputs 
+                        .position
+                            input(type="text",placeholder="Стена 1", id="stena_1")
+                            input(type="text",placeholder="Стена 2", id="stena_2")
+                        .position_2
+                            input(type="text",placeholder="Стена 3", id="stena_3")
+                            input(type="text",placeholder="Стена 4", id="stena_4")
+                    .position_3
+                        input(type="text",placeholder="Ширина")
+                        input(type="text",placeholder="Высота")  
+                    .position_4
+                        input(type="text",placeholder="Ширина")
+                        input(type="text",placeholder="Высота")  
                     .block-contact
                         h3 УКАЖИТЕ КОНТАКТНЫЕ ДАННЫЕ:
-                        .block-label
+                        .block-contact-label
                             label ФИО:
-                            .block-input-contact 
-                                input(type="text")
-
+                            input(type="text")
                             label Телефон:
-                            .block-input-contact
-                                input(type="text")
-
+                            input(type="text")
                             label E-mail:
-                            .block-input-contact
-                                input(type="text")
-                            
+                            input(type="text")
                             label Комментарий:
-                    .block-comment
-                            
-                     
-                            textarea(name="comment", cols="26", rows="6")       
-                            .btn
-                                button Отправить
-
+                            textarea(name="comment", cols="26", rows="6")     
+                            button Отправить
     include jade/footer        

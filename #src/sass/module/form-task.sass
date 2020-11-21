@@ -1,3 +1,29 @@
+label 
+    font-size: 14px
+    font-style: normal
+    font-weight: 300
+    line-height: 16.41px
+    &:first-child
+        margin-left: 3px
+    &:nth-child(2)
+        margin-top: 41px
+        margin-left: -2px
+    &:nth-child(3)
+        margin-top: 14px
+        margin-left: 14px
+
+input 
+    background: #1c1c1c
+    border: none
+    outline: none
+    font-weight: 300
+    font-style: italic
+    font-size: 10px
+    line-height: 12px
+    color: #434343
+    width: 71px
+    height: 17px
+    padding-left: 8px
 .form-task
     margin-top: 20px
     display: flex
@@ -7,85 +33,294 @@
     padding: 0 36px
 .casual
     background: #232323
-    .content
+    padding:  0 1vmax 412px
+    padding-left: 3vmax
+    padding-right: 0vmax
+    position: relative
+    text-align: center
+    h3
+        font-size: 18px
+        line-height: 21px
+        font-weight: 500
+        white-space: nowrap
+        font-style: normal
+        position: absolute
+        left: 0
+        margin: 11px 14px 0
+    .block-label
+        margin: 49px 4px 0
+        position: absolute
+        display: flex
+        left: 0
+        flex-direction: column
+.block-inputs
+    input
+        margin-top: 5px
+        margin-right: 15px
+    .position
+        display: flex
+        flex-direction: column
+        margin-left: 67px
+        padding-top: 18px
+        input 
+            &:nth-child(1)
+                margin-top: 30px
+    .position_2
+        display: flex
+        margin-left: 152px
+        flex-direction: column 
+        margin-top: -48px
+
+.position_3
+        text-align: right
+        margin-top: 15px
+        input
+            &:first-child
+                margin-right: 4px
+            &:last-child
+                margin-right: 15px 
+.position_4
+        text-align: right
+        margin-top: 12px
+        input
+            &:first-child
+                margin-right: 4px
+            &:last-child
+                margin-right: 15px 
+
+
+.block-contact
+    h3 
+        white-space: normal
+        text-align: left
+        margin-left: 16px
+        margin-top: 24px
+    .block-contact-label
+        display: flex
+        text-align: left
+        flex-direction: column
+        position: absolute
+        margin: 81px 0px 0
         label
+         margin: 18px 0 0
+         padding: 0
+        input 
+            width: 137px
+            height: 17px
+            margin-left: 72px
+            margin-top: -16px
+        textarea
+            background:  #1c1c1c
+            outline: none
+            margin-top: 13px
+            border: none
+            font-weight: 300
+            font-size: 10px
+            line-height: 12px
+            padding-bottom: 30px
+            color: #434343
+        button 
+            background: #1c1c1c
+            color: #ffffff
             font-weight: 300
             font-style: normal
             font-size: 14px
             line-height: 16px
-            padding: 5px 0 
-            &:last-child
-                margin-top: 10px
-        h3 
-            font-weight: 500
-            font-style: normal
+            padding: 8px 24px 
+            margin: 0 46px 0
+            margin-top: 20px
+ 
+
+@media screen and ( min-width: 768px )
+ .form-task
+     margin-top: 60px
+ .casual
+   padding:  0 1vmax 750px  
+ .block-contact
+     h3 
+         margin-left: 63px !important
+
+     .block-contact-label
+         margin: 135px  53px 0
+           
+         input
+            width: 319px
+            height: 40px
+            font-size: 18px
+            margin-left: 152px
+            margin-top: -28px
+            line-height: 21px
+         textarea
+            padding-bottom: 150px
             font-size: 18px
             line-height: 21px
+         button
+            font-size: 24px
+            line-height: 28px  
+            margin-top: 32px
+            padding: 15px 44px
+            margin: 32px 120px 0 
+ .position_4
+     margin-top: 25px
+ .position_3
+   input
+    &:first-child
+        margin-right: 26px
+    &:last-child
+        margin-right: 15px   
 
-        display: flex
-        flex-direction: column
-        justify-content: space-between
-        margin: 11px 13px
+
+ .position_4
+   input
+    &:first-child
+        margin-right: 26px
+    &:last-child
+        margin-right: 15px   
+ input
+    width: 165px
+    height: 40px
+    font-size: 18px
+    line-height: 21px
+ label
+    font-size: 18px
+    line-height: 21px
+    &:nth-last-child(2)
+        margin-top: 98px
+    &:last-child
+        margin-top: 48px
         
-        .block-label
-            margin: 15px 0
-            display: flex
-            flex-direction: column
-            justify-content: flex-start
-            .block-input-stena
-                display: flex
-                flex-direction: row
-                flex-wrap: wrap
-                padding: 10px
-                text-align: right
-                margin-left: 45px
-                margin-top: -33px
-                input 
-                    margin-top: 3px 
-                    margin-left: 3px
-            .block-input-window
-                display: flex
-                margin-left: 55px
-                margin-top: -23px
-                input
-                    margin-left: 3px
+ .casual
+     padding-right: 5vmax
+     .block-label
+         margin-top: 128px
+         margin-left: 52px
+     h3
+        font-size: 36px
+        line-height: 42px   
+        margin-top: 26px
+        margin-left: 61px
+ .block-inputs
+     input
+         margin-top: 20px
+     .position
+         margin-left: 144px
+         padding-top: 90px
+     .position_2
+         margin-left: 345px
+         margin-top: -123px
+ 
     
-.block-input-contact
-    display: flex
-    margin-left: 70px
-    margin-top: -22px 
-    input 
-        padding: 0 35px
+
+@media screen and ( min-width: 1280px )
+  .form-task
+      margin-top: 45px  
+  .block-contact
+      margin-top: 28px
+      h3 
+          width: 500px
+          margin-left: 54px !important
+      .block-contact-label
+          margin: 135px 23px 0
+          input
+              width: 319px
+              font-size: 24px
+              line-height: 28px
+              height: 40px
+              margin-left: 12px
+              &:nth-of-type(2)
+                  margin-top: -30px
+          label
+              margin: 30px -108px 0
+              &:nth-of-type(4)
+                  margin-left: 352px
+                  margin-top: -182px
+          textarea
+              margin-left: 525px
+              padding-bottom: 31px
+              margin-top: -30px
+              font-size: 24px
+              line-height: 28px  
+          button
+              font-size: 24px
+              line-height: 28px
+              margin-left: 250px  
+              margin-top: 24px   
+              width: 221px
+  
+  .block-inputs
+    .position
+        margin-left: 10px
+        padding-top: 0
+        margin-top: -93px
+        position: absolute
+        input
+          margin-right: 15px
+          margin-top: 0
+          &:first-child
+            margin-top: 0
+            margin-bottom: 15px
+    .position_2
+        margin-left: 200px
+        margin-top: -113px
+        position: absolute 
+        input 
+            &:first-child
+                margin-top: 20px
+                margin-right: 20px
+            &:last-child
+                margin-top: 15px
+                margin-right: 14px
+  .position_3
+    text-align: right
+    margin-top: -214px
+    padding-top: 120px
+    margin-left: 503px   
+    input
+     &:first-child
+        margin-left: 44px
+        margin-right: 4px
+     &:last-child
+        margin-left: 19px     
+  .position_4
+    text-align: right
+    margin-top: 22px
+    input
+        &:first-child
+         margin-right: 8px  
+        &:last-child
+         margin-left: 15px 
+  input
+      width: 165px
+      height: 40px
+      font-size: 18px
+      line-height: 21px
+  label
+    font-size: 24px
+    line-height: 28px   
+    &:first-child
+        margin-left: -136px
+        margin-top: 132px
+    &:nth-child(2)
+        margin-left: 206px
+        margin-top: -42px
+        padding-top: 180px
+    &:nth-child(3)
+        margin-top: 199px
+        margin-left: -292px
+        margin-right: 370px    
+  .casual
+     padding: 0px 1vmax 478px
+     padding-left: 11vmax
+     padding-right: 3vmax
+     h3 
+         font-size: 36px
+         line-height: 42px
+         margin-top: 41px
+         margin-left: 54px
+     .block-label
+         position: inherit
+         margin: 0 51px 0
+         flex-direction: row
+         justify-content: space-between
     
-input 
-    background: #1c1c1c
-    border: none
-    outline: none
-    width: 71px
-    height: 17px
-
-
-
-.block-comment
-    textarea
-        margin: -9px 0
-        background:  #1c1c1c
-        outline: none
-        border: none
-
-.btn 
-    display: flex
-    justify-content: flex-start
-    margin-left: 55px
-    margin-top: 16px
-    button 
-        background: #1c1c1c
-        color: #ffffff
-        font-weight: 300
-        font-style: normal
-        font-size: 14px
-        line-height: 16px
-        padding: 6px 24px 
-
-
 
